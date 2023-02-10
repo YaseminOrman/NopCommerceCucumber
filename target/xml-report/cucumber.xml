@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="21.56" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Customers" name="Search Customer By EmailID" time="21.33">
+<system-out><![CDATA[
+Given user opens url "https://admin-demo.nopcommerce.com/login".............passed
+When user enters email as "admin@yourstore.com" and password as "admin".....passed
+And click on login..........................................................passed
+Then user can view dashboard................................................passed
+When user click on customers menu...........................................passed
+And click on customers menu item............................................passed
+And enter customer email....................................................passed
+When click on search button.................................................passed
+Then user should found email in the search table............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
