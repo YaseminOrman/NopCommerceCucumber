@@ -72,5 +72,19 @@ public class CustomerStepDefinitions {
     Assert.assertTrue(searchCustomerPage.emailText.getText().contains("victoria_victoria@nopCommerce.com"));
     }
 
+    @When("enter customer firstname")
+    public void enter_customer_firstname() {
+     searchCustomerPage.searchFirstName.sendKeys("Victoria");
+    }
+    @When("enter customer lastname")
+    public void enter_customer_lastname() {
+      searchCustomerPage.searchLastName.sendKeys("Terces");
+    }
+    @Then("user should found name in the search table")
+    public void user_should_found_name_in_the_search_table() {
+      Assert.assertTrue(searchCustomerPage.nameText.getText().contains("Victoria Terces"));
+    }
+
+
 
 }

@@ -18,5 +18,14 @@ public class SearchCustomerPage {
     @FindBy(xpath = "//table//td[2]")
     public WebElement emailText;
 
+    @FindBy(xpath = "//table//td[3]")
+    public WebElement nameText;
+
+    @FindBy(id = "SearchFirstName")
+    public WebElement searchFirstName;
+
+    @FindBy(id = "SearchLastName")
+    public WebElement searchLastName;
+
 
 }
